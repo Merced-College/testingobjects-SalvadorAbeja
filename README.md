@@ -2,3 +2,7 @@
 # testingObjects
 
 this is an example of a ReadMe file.
+
+The three fields I used for the cat file were name, color , and (if they were) energetic. The default values were Unknown, black, and false
+Encapsulation is preferred over public fields becacause it makes the person in control of the code to make sure all the data makes sense. For example, it can make sure that when someone types in someone's age is not negative or that you can't have a negative amount of something.
+
