@@ -34,6 +34,38 @@ public class DogTest {
     d3.setName("Max");
     System.out.println("After mutation, d3 = " + d3); // uses toString()
     
-  } //ends main
-} //ends class
+    System.out.println("--------------------------------------------------------------------");
+    // A1: Create a Dog with no constructors defined.
+    cat cat1 = new cat();
 
+    // A2: Print the object directly.
+    System.out.println("Printing cat1 directly:");
+    System.out.println(cat1);
+    
+    cat c1 = new cat();
+  
+    System.out.println("\nDefaults for c1 fields (before any assignment):");
+    System.out.println("name = " + c1.getName());   // expected: null
+    System.out.println("color = " + c1.getColor());     // expected: 0
+    System.out.println("energetic = " + c1.getEnergetic()); // expected: null
+
+    cat c2 = new cat(); // uses default constructor values
+    System.out.println("\nc2 after default constructor:");
+    System.out.println("name = " + c2.getName() + ", color = " + c2.getColor() + ", energetic = " + c2.getEnergetic());
+
+    cat c3 = new cat("Simba", "Orange", true); // uses parameterized constructor
+    System.out.println("\nc3 after parameterized constructor:");
+    System.out.println("name = " + c3.getName() + ", color = " + c3.getColor() + ", energetic = " + c3.getEnergetic());
+
+    System.out.println("\nPrinting objects after overriding toString():");
+    System.out.println("c2 = " + c2);
+    System.out.println("c3 = " + c3);
+
+    System.out.println("\nMutating public fields directly:");
+    //d3.age() = 5;      // direct write
+    c3.setColor("Orange");
+    //d3.name = "Max"; // direct write
+    c3.setName("Simba");
+    System.out.println("After mutation, c3 = " + c3); // uses toString()
+} //ends class
+}
