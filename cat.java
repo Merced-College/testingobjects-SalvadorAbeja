@@ -1,3 +1,9 @@
+/*
+ *Salvador Abeja
+ *1.27.26
+ *Dog Class
+ */
+
 public class cat {
 
     // instance variables
